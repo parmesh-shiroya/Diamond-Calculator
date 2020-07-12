@@ -100,6 +100,32 @@ class _AboutUsScreenState extends State<AboutUsScreen> {
                                 ),
                               ],
                             ),
+                          )),
+                      SizedBox(
+                        height: 50,
+                      ),
+                      FadeAnimation(
+                          0.2,
+                          GestureDetector(
+                            onTap: (){
+                              launch("https://wa.me/919924756555?text=For%20Diamond%20Calculator");
+                            },
+                            child: Row(
+                              mainAxisSize: MainAxisSize.min,
+                              children: <Widget>[
+                                Icon(Icons.chat_bubble_outline),
+                                SizedBox(
+                                  width: 10,
+                                ),
+                                Text(
+                                  "+91 99247 56555",
+                                  style: GoogleFonts.sourceSansPro(
+                                    fontWeight: FontWeight.w600,
+                                    fontSize: 20,
+                                  ),
+                                ),
+                              ],
+                            ),
                           ))
                     ],
                   )
