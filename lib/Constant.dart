@@ -8,7 +8,8 @@ const kPrimaryDarkColor = Color(0xFF0C0E10);
 const kPrimaryDarkColor3 = Color(0xFF25272D);
 const kAdmobID = "ca-app-pub-4181876387693872~5806913849";
 
-const kAccentColor = Color(0xFF5E7AF4);
+const kAccentColor = Color(0xFFFF6582);
+  const kAccentDarkColor = Color(0xFFFF435C);
 
 MobileAdTargetingInfo targetingInfo = MobileAdTargetingInfo(
   keywords: <String>['diamond', 'gold', "jewelry"],

@@ -223,6 +223,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                           padding: EdgeInsets.only(left: 16, right: 16),
                           height: 42,
                           decoration: BoxDecoration(
+                            border: Border.all(color: kAccentColor,width: 2),
                             color: kPrimaryDarkColor,
                             borderRadius: BorderRadius.all(Radius.circular(8)),
                             boxShadow: [
@@ -621,16 +622,19 @@ class PriceField2 extends StatelessWidget {
               decoration: BoxDecoration(
                 gradient: LinearGradient(colors: [
                   kAccentColor,
+                  kAccentDarkColor,
                   kPrimaryDarkColor,
                   kPrimaryDarkColor,
                   kPrimaryDarkColor3
                 ], stops: [
+                  0.0,
                   0.2,
                   0.2,
                   0.8,
                   0.8
                 ]),
                 borderRadius: BorderRadius.all(Radius.circular(8)),
+                border: Border.all(color: kAccentColor,width: 2),
                 boxShadow: [
                   BoxShadow(
                     color: Colors.black,
