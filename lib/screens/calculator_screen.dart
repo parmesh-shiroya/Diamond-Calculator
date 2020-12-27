@@ -3,6 +3,7 @@ import 'package:diamondcalculator/Constant.dart';
 import 'package:diamondcalculator/data/DiamondPrice.dart';
 import 'package:diamondcalculator/presentation/custom_icons.dart';
 import 'package:diamondcalculator/screens/aboutus_screen.dart';
+import 'package:share/share.dart';
 import 'package:firebase_admob/firebase_admob.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -119,12 +120,20 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                   builder: (BuildContext context) => AboutUsScreen()));
             },
           ),
+          IconButton(
+            icon: Icon(Icons.share),
+            onPressed: () {
+                Share.share('Download Diamond Calculator\n\nCalculate Diamond Price based on caret, shape, color and clarity.\nhttps://play.google.com/store/apps/details?id=com.color9.diamondcalculator ', subject: 'Diamond Price Calculator');
+            },
+          ),
         ],
         title: Row(
           children: <Widget>[
             Image(
               image: Svg('assets/diamond.svg'),
               width: 25,
+              height: 25,
+
             ),
             SizedBox(
               width: 10,
